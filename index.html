@@ -1,34 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Blog preview card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Blog preview card</title>
 
-  Learning
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+      .attribution {
+        font-size: 16px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      :root {
+        --color-white: hsl(0, 0%, 100%);
+        --color-grey: hsl(0, 0%, 50%);
+        --color-black: hsl(0, 0%, 7%);
+        --color-Yellow: hsl(47, 88%, 63%);
+        font-family: "Figtree", sans-serif;
+        font-size: 1.1em;
+      }
+      body {
+        background-color: var(--color-Yellow);
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .blog-card {
+        width: 380px;
+        height: 530px;
+        background-color: var(--color-white);
+        border-radius: 20px;
+        border: 0.6px;
+        border-style: solid;
+        text-align: left;
+        align-items: left;
+        box-shadow: 8px 8px 1px;
+        padding: 30px 23px;
+      }
+      .image-card img {
+        width: 380px;
+        border-radius: 20px;
+      }
+      .image-card {
+        text-align: center;
+      }
+      .tags-card {
+        text-align: left;
+        margin-top: 25px;
+      }
+      .tag {
+        background-color: var(--color-Yellow);
+        width: 80px;
+        padding: 3px;
+        text-align: center;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      .publish-date-card {
+        margin-top: 15px;
+      }
+      .title-card {
+        margin-top: 25px;
+      }
+      .description-card {
+        margin-top: 25px;
+      }
+      .user-card {
+        display: flex;
+        margin-top: 25px;
+        align-items: center;
+        font-size: 1em;
+      }
+      .user-card img {
+        margin-right: 10px;
+        width: 32px;
+        height: 32px;
+      }
+      .user-card p {
+        font-weight: bold;
+      }
+      footer {
+        margin-top: 45px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="blog-card">
+        <div class="image-card">
+          <img src="assets/images/illustration-article.svg" alt="" />
+        </div>
+        <div class="tags-card">
+          <div class="tag">Learning</div>
+        </div>
+        <div class="publish-date-card">Published 21 Dec 2023</div>
+        <article>
+          <div class="title-card"><h1>HTML & CSS foundations</h1></div>
+          <div class="description-card">
+            <p>
+              These languages are the backbone of every website, defining
+              structure, content, and presentation.
+            </p>
+          </div>
+          <div class="user-card">
+            <img src="assets/images/image-avatar.webp" alt="">
+            <p>Greg Hooper</p>
+          </div>
+        </article>
+      </div>
+    </main>
 
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Pedro Vitor</a>.
+      </div>
+    </footer>
+  </body>
 </html>
